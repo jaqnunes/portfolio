@@ -13,33 +13,33 @@
       <v-btn variant="outlined" class="navBar--icon navBar--button">
         CONTACT ME
       </v-btn>
-      <v-btn
+      <!-- <v-btn
         @click="toggleTheme()"
         variant="outlined"
         class="navBar--icon navBar--button"
         :icon="'mdi-lightbulb-' + `${isDarkMode ? 'on' : 'off'}`"
         size="large"
-      ></v-btn>
+      ></v-btn> -->
     </v-toolbar>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      isDarkMode: false,
-    };
-  },
-  created() {
-    this.toggleTheme();
-  },
-  methods: {
-    toggleTheme() {
-      this.isDarkMode = !this.isDarkMode;
-      document.documentElement.className = this.isDarkMode ? "dark" : "light";
-    },
-  },
+  // data() {
+  //   return {
+  //     // isDarkMode: false,
+  //   };
+  // },
+  // created() {
+  //   this.toggleTheme();
+  // },
+  // methods: {
+  //   toggleTheme() {
+  //     this.isDarkMode = !this.isDarkMode;
+  //     document.documentElement.className = this.isDarkMode ? "dark" : "light";
+  //   },
+  // },
 };
 </script>
 
