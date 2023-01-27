@@ -2,13 +2,15 @@
 
 :root {
   margin: 0.65rem;
-  background-color: rgb(241, 232, 226);
+  background-color: #f1e8e2;
 }
 
 :root.light {
-  background-color: rgb(241, 232, 226);
+  transition: 0.7s;
+  background-color: #f1e8e2;
 }
 
 :root.dark {
+  transition: 0.7s;
   background-color: #0b0b0b;
 }
