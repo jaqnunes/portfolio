@@ -2,15 +2,34 @@
   <div class="navBar">
     <v-toolbar color="transparent">
       <v-toolbar-title>
-        <a
-          href="https://github.com/jaqnunes"
-          class="navBar--title navBar--icon"
-        >
-          &lt;/JACKELYNE&gt;
-        </a>
+        <h1>
+          <a
+            href="https://github.com/jaqnunes"
+            class="navBar--title navBar--icon"
+          >
+            &lt;/JACKELYNE&gt;
+          </a>
+        </h1>
       </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn variant="outlined" class="navBar--icon navBar--button">
+      <v-btn
+        @click="scroll('about')"
+        variant="outlined"
+        class="navBar--icon navBar--button"
+      >
+        ABOUT ME
+      </v-btn>
+      <v-btn
+        @click="scroll('PORTFOLIO')"
+        variant="outlined"
+        class="navBar--icon navBar--button"
+      >
+        PORTFOLIO
+      </v-btn>
+      <v-btn
+        @click="scroll('contact')"
+        variant="outlined"
+        class="navBar--icon navBar--button"
+      >
         CONTACT ME
       </v-btn>
       <v-btn
@@ -33,12 +52,28 @@ export default {
   computed: {
     ...mapStores(useThemeStore),
   },
+  methods: {
+    scroll(refName) {
+      const element = document.getElementById(refName);
+      element.scrollIntoView({ behavior: "smooth" });
+    },
+  },
 };
 </script>
 
 <style scoped lang="scss">
+h1 {
+  padding-right: 7rem;
+}
 .navBar {
-  padding: 0.5rem;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   &--title {
     text-decoration: none;
@@ -58,7 +93,7 @@ export default {
   }
 
   &--button {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 }
 </style>

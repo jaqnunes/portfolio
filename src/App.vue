@@ -1,7 +1,9 @@
 <template>
   <v-app id="app" :class="ThemeStore.getTheme">
     <NavBar />
-    <v-container fluid></v-container>
+    <v-container fluid>
+      <div class="head"></div>
+    </v-container>
   </v-app>
 </template>
 
