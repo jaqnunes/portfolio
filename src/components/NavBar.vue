@@ -1,15 +1,14 @@
 <template>
-  <div class="navBar">
-    <v-toolbar color="transparent">
+  <div>
+    <v-toolbar class="navBar" color="transparent">
       <v-toolbar-title>
-        <h1>
-          <a
-            href="https://github.com/jaqnunes"
-            class="navBar--title navBar--icon"
-          >
-            &lt;/JACKELYNE&gt;
-          </a>
-        </h1>
+        <a
+          href="https://github.com/jaqnunes"
+          target="_blank"
+          class="navBar--title navBar--icon"
+        >
+          Jackelyne
+        </a>
       </v-toolbar-title>
       <v-btn
         @click="scroll('about')"
@@ -62,34 +61,38 @@ export default {
 </script>
 
 <style scoped lang="scss">
-h1 {
-  padding-right: 7rem;
+.v-toolbar-title {
+  line-height: 3.7rem;
 }
+
+.v-btn--icon.v-btn--density-default {
+  width: 50px;
+  height: 50px;
+}
+
 .navBar {
-  margin-left: 1.2em;
-  margin-right: 1.2em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 0.5rem 2rem;
 
-  &--title {
+  &--title:link {
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   &--icon {
     font-family: "Source Code Pro", monospace, Arial, Helvetica, sans-serif;
-    color: #ff6701;
+    font-weight: 900;
+    color: #a33aff;
     letter-spacing: 0.15rem;
     transition: 0.7s;
     margin-right: 1.5rem;
   }
 
   &--icon:hover {
-    text-shadow: 0px 0px 10px #ff3b00, 0px 0px 20px #ff3b00;
+    text-shadow: 0px 0px 10px #aa00ff, 0px 0px 20px #aa00ff;
   }
 
   &--button {
