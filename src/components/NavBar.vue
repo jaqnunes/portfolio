@@ -10,46 +10,17 @@
           Jackelyne
         </a>
       </v-toolbar-title>
-      <v-btn
-        @click="scroll('about')"
-        variant="outlined"
-        class="navBar--icon navBar--button"
-      >
-        ABOUT ME
-      </v-btn>
-      <v-btn
-        @click="scroll('PORTFOLIO')"
-        variant="outlined"
-        class="navBar--icon navBar--button"
-      >
-        PORTFOLIO
-      </v-btn>
-      <v-btn
-        @click="scroll('contact')"
-        variant="outlined"
-        class="navBar--icon navBar--button"
-      >
-        CONTACT ME
-      </v-btn>
-      <v-btn
-        @click="ThemeStore.toggleTheme()"
-        variant="outlined"
-        class="navBar--icon navBar--button"
-        :icon="ThemeStore.getThemeIcon"
-        size="large"
-      ></v-btn>
+      <NavBarIcons />
     </v-toolbar>
   </div>
 </template>
 
 <script>
-import { mapStores } from "pinia";
-import useThemeStore from "../stores/ThemeStore";
-
+import NavBarIcons from "./NavBarIcons.vue";
 export default {
   name: "NavBar",
-  computed: {
-    ...mapStores(useThemeStore),
+  components: {
+    NavBarIcons,
   },
   methods: {
     scroll(refName) {
@@ -60,7 +31,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .v-toolbar-title {
   line-height: 3.7rem;
 }
@@ -75,7 +46,7 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
 
   &--title:link {
     text-decoration: none;
