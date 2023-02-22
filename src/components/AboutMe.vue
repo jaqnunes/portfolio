@@ -1,5 +1,6 @@
 <template>
   <div class="aboutMe">
+    <img src="../../images/undraw_proud_coder_re_exuy.svg" alt="developer_undraw">
     <div class="aboutMe--texts">
       <h1>I am a Developer, get to know me:</h1>
       <p>
@@ -7,6 +8,7 @@
       </p>
     </div>
   </div>
+  
 </template>
 
 <script>

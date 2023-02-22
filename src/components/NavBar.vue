@@ -41,7 +41,7 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
 
   &--title:link {
     text-decoration: none;
