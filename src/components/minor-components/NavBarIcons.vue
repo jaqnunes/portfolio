@@ -29,7 +29,7 @@
 
 <script>
 import { mapStores } from "pinia";
-import useThemeStore from "../stores/ThemeStore";
+import useThemeStore from "../../stores/ThemeStore.js";
 
 export default {
   name: "NavBarIcons",

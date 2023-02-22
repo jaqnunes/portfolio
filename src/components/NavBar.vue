@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import NavBarIcons from "./NavBarIcons.vue";
+import NavBarIcons from "./minor-components/NavBarIcons.vue";
 
 export default {
   name: "NavBar",
