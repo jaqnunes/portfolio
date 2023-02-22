@@ -5,11 +5,11 @@
 }
 
 #app .dark {
-  background-color: #16141e;
-  color: #af9ee2;
+  background-color: #26184e;
+  color: #cfc5ed;
 }
 
 #app .light {
   background-color: #f8f9fa;
-  color: #4c319d;
+  color: #5f3dc4;
 }
