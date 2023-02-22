@@ -40,6 +40,12 @@ export default {
   computed: {
     ...mapStores(useThemeStore),
   },
+  methods: {
+    scroll(refName) {
+      const element = document.getElementById(refName);
+      element.scrollIntoView({ behavior: "smooth" });
+    },
+  },
 };
 </script>
 

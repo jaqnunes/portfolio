@@ -17,16 +17,11 @@
 
 <script>
 import NavBarIcons from "./NavBarIcons.vue";
+
 export default {
   name: "NavBar",
   components: {
     NavBarIcons,
-  },
-  methods: {
-    scroll(refName) {
-      const element = document.getElementById(refName);
-      element.scrollIntoView({ behavior: "smooth" });
-    },
   },
 };
 </script>
@@ -56,14 +51,9 @@ export default {
   &--icon {
     font-family: "Source Code Pro", monospace, Arial, Helvetica, sans-serif;
     font-weight: 900;
-    color: #a33aff;
     letter-spacing: 0.15rem;
     transition: 0.7s;
     margin-right: 1.5rem;
-  }
-
-  &--icon:hover {
-    text-shadow: 0px 0px 10px #aa00ff, 0px 0px 20px #aa00ff;
   }
 
   &--button {
