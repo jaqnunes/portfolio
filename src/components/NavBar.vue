@@ -52,7 +52,6 @@ export default {
     font-family: "Source Code Pro", monospace, Arial, Helvetica, sans-serif;
     font-weight: 900;
     letter-spacing: 0.15rem;
-    transition: 0.7s;
     margin-right: 1.5rem;
   }
 
