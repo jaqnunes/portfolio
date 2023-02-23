@@ -1,7 +1,5 @@
 <template>
-  <v-card
-    class="mx-auto my-12"
-  >
+  <v-card>
     <v-img
       cover
       height="250"
@@ -39,6 +37,7 @@ export default {
   border-radius: 30px;
   max-width: 350px;
   min-height: 460px;
+  margin: 20px 20px 20px 20px;
 }
 
 .v-card:hover {
