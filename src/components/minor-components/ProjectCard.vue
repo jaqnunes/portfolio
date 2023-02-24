@@ -22,6 +22,26 @@
       </v-chip-group>
     </div>
 
+    <v-divider />
+
+    <div class="buttons">
+      <a
+        href="https://github.com/jaqnunes"
+        target="_blank"
+        class="button mb-2"
+      >
+        View page demo
+      </a>
+      <a
+        href="https://github.com/jaqnunes" 
+        target="_blank"
+        class="button"
+        :icon="CodeBracketIcon"
+      >
+        View code repository
+      </a>
+    </div>
+
   </v-card>
 </template>
 
@@ -42,11 +62,7 @@ export default {
 
 .v-card:hover {
   transition: 0s;
-  box-shadow: 0px 20px 30px 0px rgba(115,115,115,0.7);
-}
-
-.v-card:active {
-  box-shadow: 0px 20px 20px -5px rgba(115,115,115,0.7);
+  box-shadow: 0px 20px 20px 0px rgba(115,115,115,0.7);
 }
 
 .v-divider {
@@ -57,6 +73,25 @@ export default {
   display: flex;
   justify-content: center;
   margin-top: 12px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+  max-width: 350px;
+}
+
+.button {
+  text-decoration: none;
+  text-align: center;
+  background-color: #5f3dc4;
+  color: #fff;
+  border-radius: 30px;
+  padding: 15px;
+  width: 100%
 }
 
 </style>
