@@ -1,10 +1,6 @@
 <template>
   <v-card>
-    <v-img
-      cover
-      height="250"
-      src="../../../images/undraw_proud_coder_re_exuy.svg"
-    ></v-img>
+    <v-img cover height="250" src="../../../images/undraw_proud_coder_re_exuy.svg"></v-img>
 
     <v-card-item>
       <v-card-title>My portfolio</v-card-title>
@@ -25,19 +21,10 @@
     <v-divider />
 
     <div class="buttons">
-      <a
-        href="https://github.com/jaqnunes"
-        target="_blank"
-        class="button mb-2"
-      >
+      <a href="https://github.com/jaqnunes" target="_blank" class="button mb-2">
         View page demo
       </a>
-      <a
-        href="https://github.com/jaqnunes" 
-        target="_blank"
-        class="button"
-        :icon="CodeBracketIcon"
-      >
+      <a href="https://github.com/jaqnunes" target="_blank" class="button" :icon="CodeBracketIcon">
         View code repository
       </a>
     </div>
@@ -57,12 +44,12 @@ export default {
   border-radius: 30px;
   max-width: 350px;
   min-height: 460px;
-  margin: 20px 20px 20px 20px;
+  margin: 20px;
 }
 
 .v-card:hover {
   transition: 0s;
-  box-shadow: 0px 20px 20px 0px rgba(115,115,115,0.7);
+  box-shadow: 0px 20px 20px 0px rgba(115, 115, 115, 0.7);
 }
 
 .v-divider {
@@ -94,5 +81,12 @@ export default {
   width: 100%
 }
 
+.button:hover {
+  background-color: #4c319d;
+}
+
+.button:active {
+  background-color: #5637b0;
+}
 </style>
 
