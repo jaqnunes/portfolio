@@ -23,9 +23,11 @@
     <div class="buttons">
       <a href="https://github.com/jaqnunes" target="_blank" class="button mb-2">
         View page demo
+        <v-icon end icon="mdi-open-in-new"></v-icon>
       </a>
-      <a href="https://github.com/jaqnunes" target="_blank" class="button" :icon="CodeBracketIcon">
-        View code repository
+      <a href="https://github.com/jaqnunes" target="_blank" class="button">
+        View code repo
+        <v-icon end icon="mdi-open-in-new"></v-icon>
       </a>
     </div>
 

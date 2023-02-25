@@ -42,6 +42,7 @@ export default {
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem 4rem;
+  border-bottom: solid #e5e7eb;
 
   &--title:link {
     text-decoration: none;

@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia';
-import { MoonIcon, SunIcon } from '@heroicons/vue/24/outline'
 
 const useThemeStore = defineStore('Theme', {
   state: () => ({
@@ -14,7 +13,7 @@ const useThemeStore = defineStore('Theme', {
     },
     getThemeIcon() {
       return (
-       this.isDarkThemeActive ? SunIcon : MoonIcon
+        "mdi-lightbulb-" + `${this.isDarkThemeActive ? "on" : "off"}`
       );
     },
   },
