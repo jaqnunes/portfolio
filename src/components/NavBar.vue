@@ -2,11 +2,7 @@
   <div>
     <v-toolbar class="navBar" color="transparent">
       <v-toolbar-title>
-        <a
-          href="https://github.com/jaqnunes"
-          target="_blank"
-          class="navBar--title navBar--icon"
-        >
+        <a href="https://github.com/jaqnunes" target="_blank" class="navBar--title navBar--icon">
           Jackelyne
         </a>
       </v-toolbar-title>

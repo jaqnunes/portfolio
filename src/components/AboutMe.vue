@@ -4,11 +4,11 @@
     <div class="aboutMe--texts">
       <h1>I am a Developer, get to know me:</h1>
       <p>
-        Hi! my name is Jackelyne, i am a 19 years old Software Engineer student currently working as Fullstack Developer Intern at IBM.
+        Hi! my name is Jackelyne, i am a 19 years old Software Engineer student currently working as Fullstack Developer
+        Intern at IBM.
       </p>
     </div>
   </div>
-  
 </template>
 
 <script>

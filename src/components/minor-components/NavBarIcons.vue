@@ -1,29 +1,16 @@
 <template>
   <div>
-    <v-btn
-      @click="scroll('about')"
-      class="navBar--icon navBar--button"
-    >
+    <v-btn @click="scroll('about')" class="navBar--icon navBar--button">
       ABOUT ME
     </v-btn>
-    <v-btn
-      @click="scroll('PORTFOLIO')"
-      class="navBar--icon navBar--button"
-    >
+    <v-btn @click="scroll('PORTFOLIO')" class="navBar--icon navBar--button">
       PORTFOLIO
     </v-btn>
-    <v-btn
-      @click="scroll('contact')"
-      class="navBar--icon navBar--button"
-    >
+    <v-btn @click="scroll('contact')" class="navBar--icon navBar--button">
       CONTACT ME
     </v-btn>
-    <v-btn
-      @click="ThemeStore.toggleTheme()"
-      class="navBar--icon navBar--button"
-      :icon="ThemeStore.getThemeIcon"
-      size="large"
-    ></v-btn>
+    <v-btn @click="ThemeStore.toggleTheme()" class="navBar--icon navBar--button" :icon="ThemeStore.getThemeIcon"
+      size="large"></v-btn>
   </div>
 </template>
 
