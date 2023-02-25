@@ -1,7 +1,9 @@
 <template>
-  <h1 class="title">My Projects</h1>
-  <div class="projects">
-    <ProjectCard />
+  <div>
+    <h1 class="title">My Projects</h1>
+    <div class="projects">
+      <ProjectCard />
+    </div>
   </div>
 </template>
 
@@ -21,6 +23,7 @@ export default {
   display: flex;
   justify-content: center;
 }
+
 .projects {
   display: flex;
   flex-wrap: wrap;

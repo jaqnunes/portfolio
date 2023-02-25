@@ -2,9 +2,9 @@
   <v-app id="app" :class="ThemeStore.getTheme">
     <NavBar />
     <v-container fluid>
-      <AboutMeSection />
-      <PortfolioSection />
-      <ContactMeFooter />
+      <AboutMeSection id="about" />
+      <PortfolioSection id="portfolio" />
+      <ContactMeFooter id="contact" />
     </v-container>
   </v-app>
 </template>

@@ -3,7 +3,7 @@
     <v-btn @click="scroll('about')" class="navBar--icon navBar--button">
       ABOUT ME
     </v-btn>
-    <v-btn @click="scroll('PORTFOLIO')" class="navBar--icon navBar--button">
+    <v-btn @click="scroll('portfolio')" class="navBar--icon navBar--button">
       PORTFOLIO
     </v-btn>
     <v-btn @click="scroll('contact')" class="navBar--icon navBar--button">
