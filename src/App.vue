@@ -4,6 +4,7 @@
     <v-container fluid>
       <AboutMeSection />
       <PortfolioSection />
+      <ContactMeFooter />
     </v-container>
   </v-app>
 </template>
@@ -14,12 +15,14 @@ import useThemeStore from "./stores/ThemeStore";
 import NavBar from "./components/NavBar.vue";
 import AboutMeSection from "./components/AboutMe.vue";
 import PortfolioSection from "./components/PortfolioSection.vue";
+import ContactMeFooter from "./components/ContactMeFooter.vue";
 
 export default {
   components: {
     NavBar,
     AboutMeSection,
     PortfolioSection,
+    ContactMeFooter,
   },
   computed: {
     ...mapStores(useThemeStore),
