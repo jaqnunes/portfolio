@@ -3,7 +3,7 @@
     <v-img cover height="250" src="../../../images/undraw_proud_coder_re_exuy.svg"></v-img>
 
     <v-card-item>
-      <v-card-title>My portfolio</v-card-title>
+      <v-card-title>My Portfolio</v-card-title>
     </v-card-item>
     <v-card-text>
       <span>This is a project that i made to store and present all of my codes.</span>
@@ -13,8 +13,8 @@
 
     <div class="chips">
       <v-chip-group>
-        <v-chip>Vue.Js</v-chip>
-        <v-chip>Sass</v-chip>
+        <v-chip>VUE.JS</v-chip>
+        <v-chip>SASS</v-chip>
       </v-chip-group>
     </div>
 
@@ -22,11 +22,11 @@
 
     <div class="buttons">
       <a href="https://github.com/jaqnunes" target="_blank" class="button mb-2">
-        View page demo
+        VIEW PAGE DEMO
         <v-icon end icon="mdi-open-in-new"></v-icon>
       </a>
       <a href="https://github.com/jaqnunes" target="_blank" class="button">
-        View code repo
+        VIEW CODE REPO
         <v-icon end icon="mdi-open-in-new"></v-icon>
       </a>
     </div>
@@ -54,14 +54,36 @@ export default {
   box-shadow: 0px 20px 20px 0px rgba(115, 115, 115, 0.7);
 }
 
+.v-card-item {
+  padding-bottom: 5px;
+}
+
+.v-card-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+
+.v-card-text {
+  font-weight: 400;
+  font-size: 0.833rem;
+  letter-spacing: 0.5px;
+  padding-bottom: 0;
+}
+
 .v-divider {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .chips {
   display: flex;
   justify-content: center;
   margin-top: 12px;
+}
+
+.v-chip {
+  letter-spacing: 0.5px;
+  font-size: 0.833rem;
 }
 
 .buttons {
@@ -89,6 +111,12 @@ export default {
 
 .button:active {
   background-color: #5637b0;
+}
+
+a {
+  font-weight: 700;
+  font-size: 0.833rem;
+  letter-spacing: 0.05rem;
 }
 </style>
 

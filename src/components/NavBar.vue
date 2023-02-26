@@ -3,7 +3,7 @@
     <v-toolbar class="navBar" color="transparent">
       <v-toolbar-title>
         <a href="https://github.com/jaqnunes" target="_blank" class="navBar--title navBar--icon">
-          Jackelyne
+          &ltJACKELYNE/&gt
         </a>
       </v-toolbar-title>
       <NavBarIcons />
@@ -41,12 +41,19 @@ export default {
   border-bottom: solid #e5e7eb;
 
   &--title:link {
+    transition: 0.7s;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
   }
 
+  &--title:hover {
+    letter-spacing: 0.833rem;
+  }
+
+
   &--icon {
-    font-family: "Source Code Pro", monospace, Arial, Helvetica, sans-serif;
+    color: #5f3dc4;
     font-weight: 900;
     letter-spacing: 0.15rem;
     margin-right: 1.5rem;
