@@ -41,7 +41,7 @@ export default {
   border-bottom: solid #e5e7eb;
 
   &--title:link {
-    transition: 0.7s;
+    transition: 0.5s;
     text-decoration: none;
     font-size: 1.5rem;
     letter-spacing: 0.25rem;

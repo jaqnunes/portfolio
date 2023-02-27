@@ -1,10 +1,11 @@
 <template>
   <v-app id="app" :class="ThemeStore.getTheme">
-    <NavBar />
     <v-container fluid>
+      <NavBar />
       <AboutMeSection id="about" />
       <PortfolioSection id="portfolio" />
       <ContactMeFooter id="contact" />
+      <ScrollUpButton />
     </v-container>
   </v-app>
 </template>
@@ -16,6 +17,7 @@ import NavBar from "./components/NavBar.vue";
 import AboutMeSection from "./components/AboutMe.vue";
 import PortfolioSection from "./components/PortfolioSection.vue";
 import ContactMeFooter from "./components/ContactMeFooter.vue";
+import ScrollUpButton from "./components/minor-components/ScrollUpButton.vue";
 
 export default {
   components: {
@@ -23,6 +25,7 @@ export default {
     AboutMeSection,
     PortfolioSection,
     ContactMeFooter,
+    ScrollUpButton,
   },
   computed: {
     ...mapStores(useThemeStore),

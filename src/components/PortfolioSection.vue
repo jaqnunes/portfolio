@@ -38,7 +38,7 @@ export default {
   font-size: 3.583rem;
   font-weight: 700;
   letter-spacing: 0.4rem;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
 
   &--text {
     margin: 0px 10px;
