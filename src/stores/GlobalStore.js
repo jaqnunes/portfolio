@@ -8,6 +8,7 @@ const useGlobalStore = defineStore('Global', {
           top: 0,
           behavior: "smooth"
         });
+        return;
       }
       const element = document.getElementById(refName);
       element.scrollIntoView({ behavior: "smooth" }); 
