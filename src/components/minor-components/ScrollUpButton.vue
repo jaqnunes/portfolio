@@ -1,21 +1,18 @@
 <template>
   <div>
-    <v-btn @click="scrollUp('navigation-bar')" icon="mdi-arrow-up" id="scroll-up-button">
+    <v-btn @click="GlobalStore.scroll()" icon="mdi-arrow-up" id="scroll-up-button">
     </v-btn>
   </div>
 </template>
 
 <script>
+import { mapStores } from "pinia";
+import useGlobalStore from '../../stores/GlobalStore';
 export default {
   name: "ScrollUpButton",
-  methods: {
-    scrollUp() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }
-  },
+  computed: {
+    ...mapStores(useGlobalStore),
+  }
 };
 </script>
 

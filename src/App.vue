@@ -1,17 +1,20 @@
 <template>
   <v-app id="app" :class="ThemeStore.getTheme">
-    <NavBar />
     <v-container fluid>
-      <AboutMeSection id="about" />
-      <PortfolioSection id="portfolio" />
+      <NavBar />
+      <div class="content">
+        <AboutMeSection id="about" />
+        <PortfolioSection id="portfolio" />
+      </div>
+      <ContactMeFooter id="contact" />
+      <ScrollUpButton />
     </v-container>
-    <ContactMeFooter id="contact" />
-    <ScrollUpButton />
   </v-app>
 </template>
 
 <script>
 import { mapStores } from "pinia";
+import useGlobalStore from "./stores/GlobalStore";
 import useThemeStore from "./stores/ThemeStore";
 import NavBar from "./components/NavBar.vue";
 import AboutMeSection from "./components/AboutMe.vue";
@@ -29,6 +32,7 @@ export default {
   },
   computed: {
     ...mapStores(useThemeStore),
+    ...mapStores(useGlobalStore),
   },
 };
 </script>
@@ -36,6 +40,10 @@ export default {
 
 <style scoped>
 .v-container {
+  padding: 0;
+}
+
+.content {
   padding: 0 5rem;
 }
 </style>
