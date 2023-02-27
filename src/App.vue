@@ -1,12 +1,12 @@
 <template>
   <v-app id="app" :class="ThemeStore.getTheme">
+    <NavBar />
     <v-container fluid>
-      <NavBar />
       <AboutMeSection id="about" />
       <PortfolioSection id="portfolio" />
-      <ContactMeFooter id="contact" />
-      <ScrollUpButton />
     </v-container>
+    <ContactMeFooter id="contact" />
+    <ScrollUpButton />
   </v-app>
 </template>
 
@@ -36,6 +36,6 @@ export default {
 
 <style scoped>
 .v-container {
-  padding: 0;
+  padding: 0 5rem;
 }
 </style>

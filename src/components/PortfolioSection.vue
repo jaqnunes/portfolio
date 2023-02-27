@@ -74,6 +74,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
+  padding: 0 5rem;
 }
 </style>
 
