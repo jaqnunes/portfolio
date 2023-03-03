@@ -1,14 +1,11 @@
 <template>
   <div>
     <div class="aboutMe">
-      <img src="../../images/undraw_proud_coder_re_exuy.svg" alt="developer_undraw">
-      <div class="aboutMe--texts">
-        <h1>Welcome! i am a developer, get to know me:</h1>
-        <p>
-          Hi! my name is Jackelyne, i am a 19 years old Software Engineer student currently working as Fullstack Developer
-          Intern at IBM.
-        </p>
-      </div>
+      <h1>Welcome! i am a developer, get to know me:</h1>
+      <p>
+        Hi! my name is Jackelyne, i am a 19 years old Software Engineer student currently working as Fullstack Developer
+        Intern at IBM.
+      </p>
     </div>
   </div>
 </template>
@@ -21,15 +18,10 @@ export default {
 
 <style lang="scss" scoped>
 .aboutMe {
-  height: 800px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-
-  &--texts {
-    max-width: 600px;
-  }
+  justify-content: center;
+  padding: 18rem 0;
 }
 </style>
 
