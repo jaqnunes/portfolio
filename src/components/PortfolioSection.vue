@@ -16,6 +16,7 @@
     <div class="projects">
       <ProjectCard />
     </div>
+    <v-divider class="section-divider" />
   </div>
 </template>
 

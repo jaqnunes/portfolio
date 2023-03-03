@@ -6,11 +6,15 @@
 }
 
 #app .dark {
-  background-color: #26184e;
+  background-color: #181818;
   color: #fafbf4;
 }
 
 #app .light {
   background-color: #f8f8f8;
   color: #2f2d41;
+}
+
+.section-divider {
+  margin: 1rem 5rem;
 }

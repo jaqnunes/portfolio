@@ -30,13 +30,13 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding: 1rem 4rem;
+  padding: 0.35rem 13rem;
   border-bottom: solid #e5e7eb;
 
   &--title:link {
     transition: 0.5s;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     letter-spacing: 0.25rem;
   }
 
@@ -48,12 +48,11 @@ export default {
   &--icon {
     color: #5f3dc4;
     font-weight: 900;
-    letter-spacing: 0.15rem;
     margin-right: 1.5rem;
   }
 
   &--button {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 </style>

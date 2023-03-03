@@ -2,6 +2,7 @@
   <div class="contact">
     <h3>Contact me</h3>
   </div>
+  <v-divider class="section-divider" />
 </template>
 
 <script>

@@ -1,12 +1,14 @@
 <template>
   <div>
     <div class="aboutMe">
-      <h1>Welcome! i am a developer, get to know me:</h1>
-      <p>
-        Hi! my name is Jackelyne, i am a 19 years old Software Engineer student currently working as Fullstack Developer
-        Intern at IBM.
+      <p class="title">Welcome! i am a <strong class="aboutMe--emphasisText">Front-end developer</strong>, get to know me:
+      </p>
+      <p class="subtitle">
+        Hi! my name is <strong class="aboutMe--emphasisText">Jackelyne</strong>, i am a 19 years old Software Engineer
+        student currently working as a <strong class="aboutMe--emphasisText">Fullstack Developer Intern at IBM.</strong>
       </p>
     </div>
+    <v-divider class="section-divider" />
   </div>
 </template>
 
@@ -16,12 +18,26 @@ export default {
 };
 </script>
 
+<style scoped>
+.title {
+  font-size: 2.3rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+}
+</style>
+
 <style lang="scss" scoped>
 .aboutMe {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding: 18rem 0;
+  text-align: center;
+  font-weight: 400;
+  line-height: 2.5rem;
+
+  &--emphasisText {
+    font-weight: 900;
+  }
 }
 </style>
 
