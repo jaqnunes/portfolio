@@ -23,16 +23,9 @@ export default {
 </script>
 
 <style lang="scss">
-.v-toolbar-title {
-  line-height: 3.7rem;
-}
-
-.v-btn--icon.v-btn--density-default {
-  width: 50px;
-  height: 50px;
-}
-
 .navBar {
+  position: fixed;
+  z-index: 1000;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
