@@ -9,7 +9,7 @@ const useThemeStore = defineStore('Theme', {
       return this.isDarkTheme;
     },
     getTheme() {
-      return this.isDarkTheme ? 'dark' : 'light';
+      return this.isDarkTheme ? 'dark' : '';
     },
     getThemeIcon() {
       return (

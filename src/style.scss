@@ -3,18 +3,15 @@
 #app {
   transition: 0.7s;
   font-family: 'Lato', sans-serif;
-}
-
-#app .dark {
-  background-color: #181818;
-  color: #fafbf4;
-}
-
-#app .light {
   background-color: #f8f8f8;
-  color: #2f2d41;
-}
+  color: #313131;
 
-.section-divider {
-  margin: 1rem 5rem;
+  .section-divider {
+    margin: 1rem 5rem;
+  }
+
+  &.dark {
+    background-color: #181818;
+    color: #dddddd;
+  }
 }

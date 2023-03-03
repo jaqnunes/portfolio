@@ -1,16 +1,15 @@
 <template>
   <div>
-    <v-btn @click="GlobalStore.scroll('about')" class="navBar--icon navBar--button">
+    <v-btn @click="GlobalStore.scroll('about')">
       ABOUT ME
     </v-btn>
-    <v-btn @click="GlobalStore.scroll('portfolio')" class="navBar--icon navBar--button">
+    <v-btn @click="GlobalStore.scroll('portfolio')">
       PORTFOLIO
     </v-btn>
-    <v-btn @click="GlobalStore.scroll('contact')" class="navBar--icon navBar--button">
+    <v-btn @click="GlobalStore.scroll('contact')">
       CONTACT ME
     </v-btn>
-    <v-btn @click="ThemeStore.toggleTheme()" class="navBar--icon navBar--button" :icon="ThemeStore.getThemeIcon"
-      size="large"></v-btn>
+    <v-btn @click="ThemeStore.toggleTheme()" :icon="ThemeStore.getThemeIcon" size="large"></v-btn>
   </div>
 </template>
 
@@ -18,7 +17,6 @@
 import { mapStores } from "pinia";
 import useThemeStore from "../../stores/ThemeStore.js";
 import useGlobalStore from "../../stores/GlobalStore";
-
 export default {
   name: "NavBarIcons",
   computed: {

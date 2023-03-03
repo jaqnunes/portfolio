@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card :color="getCardColor">
     <v-img cover height="250" src="../../../images/undraw_proud_coder_re_exuy.svg"></v-img>
 
     <v-card-item>
@@ -35,8 +35,16 @@
 </template>
 
 <script>
+import { mapStores } from 'pinia';
+import useThemeStore from '../../stores/ThemeStore';
 export default {
   name: "ProjectCard",
+  computed: {
+    ...mapStores(useThemeStore),
+    getCardColor() {
+      return this.ThemeStore.isDarkTheme ? '#2f2f2f' : '#fff';
+    }
+  },
 };
 </script>
 
@@ -51,7 +59,6 @@ export default {
 
 .v-card:hover {
   transition: 0s;
-  box-shadow: 0px 20px 20px 0px rgba(115, 115, 115, 0.7);
 }
 
 .v-card-item {
