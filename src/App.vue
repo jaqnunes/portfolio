@@ -5,8 +5,9 @@
       <div class="content">
         <AboutMeSection id="about" />
         <PortfolioSection id="portfolio" />
+        <ContactMe id="contact" />
       </div>
-      <ContactMeFooter id="contact" />
+      <SimpleFooter id="contact" />
       <ScrollUpButton />
     </v-container>
   </v-app>
@@ -19,7 +20,8 @@ import useThemeStore from "./stores/ThemeStore";
 import NavBar from "./components/NavBar.vue";
 import AboutMeSection from "./components/AboutMe.vue";
 import PortfolioSection from "./components/PortfolioSection.vue";
-import ContactMeFooter from "./components/ContactMeFooter.vue";
+import ContactMe from "./components/ContactMe.vue";
+import SimpleFooter from "./components/SimpleFooter.vue";
 import ScrollUpButton from "./components/minor-components/ScrollUpButton.vue";
 
 export default {
@@ -27,7 +29,8 @@ export default {
     NavBar,
     AboutMeSection,
     PortfolioSection,
-    ContactMeFooter,
+    ContactMe,
+    SimpleFooter,
     ScrollUpButton,
   },
   computed: {
