@@ -1,8 +1,9 @@
 <template>
   <v-app-bar 
+    class="navbar"
     flat 
     app
-    color="#111111"
+    color="#151314"
     density="compact"
   >
     <v-btn icon>
@@ -61,4 +62,8 @@ export default {
 };
 </script>
 
-  
+<style scoped>
+.navbar {
+  border-bottom: 1px solid #1d1d1d;
+}
+</style>
