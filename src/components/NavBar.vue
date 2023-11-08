@@ -24,7 +24,8 @@
     />
   </v-app-bar>
 
-  <v-navigation-drawer 
+  <v-navigation-drawer
+    class="navigation-drawer"
     app
     v-model="isMenuOpen"
     temporary
@@ -34,7 +35,13 @@
       v-for="item in navigationItems"
       :key="item.value"
     >
-      <p @click="scrollTo(item.value)"> {{ item.title }} </p>
+      <v-btn
+        class="drawer-buttons"
+        flat
+        @click="scrollTo(item.value)"
+      >
+        {{ item.title }}
+      </v-btn>
     </v-col>
   </v-navigation-drawer>
 </template>
@@ -65,5 +72,11 @@ export default {
 <style scoped>
 .navbar {
   border-bottom: 1px solid #1d1d1d;
+}
+.navigation-drawer {
+  background-color: #151314;
+}
+.drawer-buttons {
+  width: 100%;
 }
 </style>

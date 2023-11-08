@@ -17,7 +17,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
 
 .container {
-	background:#151314;
+	background-color:#151314;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: row;
